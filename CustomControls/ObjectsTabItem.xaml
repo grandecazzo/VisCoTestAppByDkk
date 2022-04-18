@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="ViscoTestApp.CustomControls.ObjectsTabItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ViscoTestApp.CustomControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="125">
+	<UserControl.Resources>
+		<Style x:Key="CoolGridForTabItem" TargetType="Grid">
+			<Setter Property="Background" Value="Transparent"></Setter>
+			<Style.Triggers>
+				<Trigger Property="IsMouseOver" Value="True">
+					<Setter Property="Background" Value="{StaticResource BalticSea}"></Setter>
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid Style="{StaticResource CoolGridForTabItem}" Margin="5">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+			<ColumnDefinition Width="Auto"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+
+		<TextBlock x:Name="ObjectNameTextBox" Grid.Column="0" Foreground="{StaticResource SpiroDiscoBall}"></TextBlock>
+		<Button Name="RemoveButton" Grid.Column="1" FontWeight="Bold" Style="{StaticResource RemoveButtonStyle}" Content="x" Click="RemoveButton_Click">
+		</Button>
+    </Grid>
+</UserControl>

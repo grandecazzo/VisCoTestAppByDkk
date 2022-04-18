@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ViscoTestApp.Resources"
+					
+					xmlns:sys="clr-namespace:System;assembly=mscorlib"
+					xmlns:enums="clr-namespace:ViscoTestApp.Enums">
+
+	<ObjectDataProvider x:Key="MenuEnum"
+                            ObjectType="{x:Type sys:Enum}"
+                            MethodName="GetValues">
+		<ObjectDataProvider.MethodParameters>
+			<x:Type TypeName="enums:ShapesEnum" />
+		</ObjectDataProvider.MethodParameters>
+	</ObjectDataProvider>
+
+</ResourceDictionary>

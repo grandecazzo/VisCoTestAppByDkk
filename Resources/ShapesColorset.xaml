@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:ViscoTestApp.Resources">
+	
+	<SolidColorBrush x:Key="SpiroDiscoBall">#17c0eb</SolidColorBrush>
+	<SolidColorBrush x:Key="LightRed">#ff4d4d</SolidColorBrush>
+	<SolidColorBrush x:Key="WeirdGreen">#3ae374</SolidColorBrush>
+	
+</ResourceDictionary>
